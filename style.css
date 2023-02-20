@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+*{
+    padding:0;
+    margin:0;
+}
+
+
+body{
+    box-sizing:border-box;
+    margin:10px;
+    padding:20px;
+    background-color:hsl(30, 38%, 92%);  
+
+}
+
+
+
+
+  .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh; 
+   
+      
+}
+
+.box{
+    max-width:700px;
+    display:flex;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    overflow:hidden;
+    background-color:hsl(0, 0%, 100%);
+    border-radius:10px;
+    
+    
+    
+}
+
+ .pic{max-width: 100%;
+    /* display:inherit;    */
+
+}
+.pinfo{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    /* padding-left:20px; */
+    margin:30px;
+    
+
+   
+}
+.pcat{
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+    letter-spacing:.7em;
+    /* line-height:10px; */
+
+}
+.pname{
+    font-size:37px;
+    font-family: 'Fraunces', serif;
+    font-weight:700;
+    line-height:36px;
+  
+    margin-top:-9px;
+    color: hsl(212, 21%, 14%);
+}
+.pdes{
+    font-size:15px;
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+    line-height:1.7em;
+    margin-bottom:45px;
+
+}
+.pprice{
+    display:flex;
+   align-items:center;
+   margin-top:-35px;
+    
+    
+}
+.nprice{
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight:700;
+    font-size:34px
+
+}
+.oprice{
+    
+    text-decoration:line-through;
+    color:hsl(228, 12%, 48%);
+    font-size:15px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:500;
+    
+    padding-left:33px;
+
+}
+.cartinfo{
+    display:flex;
+    
+    justify-content:center;
+    color:white;
+    background-color:hsl(158, 36%, 37%);
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:500;
+    padding: 17px 60px;
+    border:none;
+    border-radius:12px;
+    margin-top:-10px;
+   
+
+}
+.icon{
+    padding-RIGHT:10PX;
+}
+.cartinfo:hover{
+    color:hsl(158, 36%, 23%);
+    cursor:pointer;
+
+
+
+}
+@media only screen and (max-width:669px){
+   
+    .box{
+ 
+    grid-template-columns:1fr;
+}
+    .pic{
+    width:100%;
+    max-height:400px;
+    object-fit: cover;
+
+
+}
+ h6.pcat,h3.pname,p.pdes,.pprice{
+    padding-bottom:23px;
+  }
+  
+
+}
+@media only screen and (max-width:375px){
+    .container{
+        margin:10px auto;
+        padding:0 12px;
+    }
+.pic{
+    width:100%;
+    max-height:290px;
+    object-fit:cover;
+}
+.img,.pname,.pdes{
+    padding-bottom:10px;
+}
+.pname{
+    font-size:27px;
+    /* margin-top:-20px; */
+}
+.pdes{
+    font-size:14px;
+}
+.cartinfo{
+    padding:12px 0;
+    font-size:14px;
+}
+}
+
+
